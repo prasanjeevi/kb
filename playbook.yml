@@ -1,0 +1,11 @@
+---
+- name: Check the remote servers
+  hosts: all
+  tasks:
+    - name: "Execute the PING command"
+      ping:
+    - name: Execute the UNAME command
+      command: "uname -a"
+      register: unameout
+    - debug:
+        var: unameout.stdout_lines
