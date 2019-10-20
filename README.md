@@ -7,3 +7,6 @@ ssh localhost -i localhost-private_key
 ansible-playbook -i hosts playbook.yml
 
 chmod 600 /Users/sm/.ssh/authorized_keys
+
+
+https://www.youtube.com/watch?v=ZkFIozGY0IA
